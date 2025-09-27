@@ -20,7 +20,7 @@ This repository contains laboratory notebooks and datasets for Physics 434, focu
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/[YOUR_USERNAME]/Au25_Phys434_Data_Analysis_Lab.git
+   git clone https://github.com/Klinjin/Au25_Phys434_Data_Analysis_Lab.git
    cd Au25_Phys434_Data_Analysis_Lab
    ```
 
