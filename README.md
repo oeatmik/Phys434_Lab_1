@@ -6,13 +6,7 @@ Tuesday (AA) 1:30-4:20
 
 ## Course Overview
 
-This repository contains laboratory notebooks and datasets for Physics 434, focusing on computational data analysis techniques using real astronomical data, particularly pulsar survey data from the High Time Resolution Universe Survey (HTRU2).
-
-## Repository Contents
-
-- `lab_1_template.ipynb` - Template notebook for Lab 1: Statistical Analysis and Data Visualization
-- `htru2/` - Contains the HTRU2 dataset for pulsar analysis
-- Lab instructions and datasets for computational data analysis
+This repository contains laboratory notebook templates and datasets for Physics 434.
 
 ## Getting Started
 
@@ -24,9 +18,20 @@ This repository contains laboratory notebooks and datasets for Physics 434, focu
    cd Au25_Phys434_Data_Analysis_Lab
    ```
 
-2. **Install Python dependencies:**
+2. **Set up conda environment:**
+   
+   First, install Conda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+
    ```bash
-   pip install pandas matplotlib numpy scipy jupyter
+   conda create --name phys434 python=3.12.8
+   conda activate phys434
+   pip install -r requirements.txt
+   ```
+   
+   *Optional: To deactivate and remove the environment later:*
+   ```bash
+   conda deactivate
+   conda env remove --name phys434
    ```
 
 3. **Open in VS Code:**
@@ -38,7 +43,7 @@ This repository contains laboratory notebooks and datasets for Physics 434, focu
 
 1. **Clone and navigate to repository:**
    ```bash
-   git clone https://github.com/[YOUR_USERNAME]/Au25_Phys434_Data_Analysis_Lab.git
+   git clone https://github.com/Klinjin/Au25_Phys434_Data_Analysis_Lab.git
    cd Au25_Phys434_Data_Analysis_Lab
    ```
 
@@ -54,54 +59,20 @@ This repository contains laboratory notebooks and datasets for Physics 434, focu
 
 ### Option 3: Google Colab
 
-1. **Upload to Google Drive:**
-   - Download or clone this repository
-   - Upload the entire folder to your Google Drive
+1. **Open in Colab:**
+   
+   **Lab 1**  
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Klinjin/Au25_Phys434_Data_Analysis_Lab/blob/main/lab_1_template.ipynb)
 
-2. **Open in Colab:**
-   - Go to [Google Colab](https://colab.research.google.com/)
-   - Click "File" → "Open notebook" → "Google Drive"
-   - Navigate to your uploaded repository folder
-   - Select the notebook you want to work with
-
-3. **Mount Google Drive (run this in the first cell):**
+2. **Mount Google Drive (run this in the first cell):**
+   
+   **Important:** Google Colab's memory is ephemeral - your work will be lost when the session ends. Either download your file in the end or mount your Google Drive to save your edits and outputs permanently.
+   
    ```python
    from google.colab import drive
    drive.mount('/content/drive')
-   %cd /content/drive/MyDrive/[YOUR_REPOSITORY_FOLDER]
+   %cd /content/drive/MyDrive/
    ```
-
-## Lab Requirements
-
-- **Python 3.7+**
-- **Required packages:** pandas, matplotlib, numpy, scipy
-- **Dataset:** HTRU2 pulsar survey data (included in repository)
-
-## Data Analysis Topics
-
-- Statistical analysis and probability calculations
-- Bayes' theorem applications
-- Data visualization with histograms
-- Normal distribution analysis
-- p-value calculations and hypothesis testing
-
-## Submission Guidelines
-
-1. Complete the notebook templates by filling in the TODO sections
-2. Ensure all cells run without errors
-3. Include clear documentation and interpretations
-4. Commit your completed work to your GitHub repository
-5. Share your repository link for grading
-
-## Getting Help
-
-- **Office Hours:** Contact instructor via email
-- **Course Resources:** See Canvas for additional materials
-- **Technical Issues:** Ensure all dependencies are installed correctly
-
-## Academic Integrity
-
-Please complete your own work. You may discuss concepts with classmates, but your code and analysis should be your own.
 
 ---
 
