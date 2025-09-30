@@ -10,11 +10,21 @@ This repository contains laboratory notebook templates and datasets for Physics 
 
 ## Getting Started
 
+
+1. Click the "Fork" button in the top-right corner of the repository page
+
+2. Choose where to fork:
+Select your personal account or organization
+Optionally change the repository name
+Click "Create fork"
+
+3. Start editing
+
 ### Option 1: Local Setup (VS Code)
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/Klinjin/Au25_Phys434_Data_Analysis_Lab.git
+   git clone https://github.com/YOUR_USERNAME/Au25_Phys434_Data_Analysis_Lab.git
    cd Au25_Phys434_Data_Analysis_Lab
    ```
 
@@ -43,7 +53,7 @@ This repository contains laboratory notebook templates and datasets for Physics 
 
 1. **Clone and navigate to repository:**
    ```bash
-   git clone https://github.com/Klinjin/Au25_Phys434_Data_Analysis_Lab.git
+   git clone https://github.com/YOUR_USERNAME/Au25_Phys434_Data_Analysis_Lab.git
    cd Au25_Phys434_Data_Analysis_Lab
    ```
 
@@ -73,6 +83,22 @@ This repository contains laboratory notebook templates and datasets for Physics 
    drive.mount('/content/drive')
    %cd /content/drive/MyDrive/
    ```
+
+## Submitting your work
+
+1. **Create your branch:**
+   ```bash
+   git checkout -b [YOURBRANCH]
+   ```
+2. **Commit your changes:**
+   ```bash
+   git add .
+   git commit -m "Complete Lab 1 exercises"
+   git push origin [YOURBRANCH]
+   ```
+3. **Submit Pull Request:**
+   Go to your own forked repository on Github "Pull requests"--"New pull request"
+   In the description write down your full name.
 
 ---
 
